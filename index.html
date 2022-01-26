@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title></title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <header>
+          <img id="top-img" src="./images/plumbus_by_Sidicue.png" alt="" />
+          <h1 id="title">The Plumbus Survey form</h1>
+          <p id="description">
+            Thank you for taking the time to help us improve the platform
+          </p>
+        </header>
+
+        <div class="form-bg">
+          <form id="survey-form" action="index.html" method="post">
+            <div class="form-group">
+              <label id="name-label" for="name">Name</label>
+              <input
+                id="name"
+                type="name"
+                name="name"
+                value=""
+                placeholder="Pickle Rick"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="email-label" for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                value=""
+                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                placeholder="email@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label id="number-label" for="age">Age (optional)</label>
+              <input
+                id="number"
+                type="number"
+                name="age"
+                value=""
+                min="1"
+                max="110"
+                placeholder="18"
+              />
+            </div>
+            <div class="form-group">
+              <label id="dropdown-label" for="role"
+                >Options dropdown Role</label
+              >
+              <select id="dropdown" name="role">
+                <option value="Merchant">Merchant</option>
+                <option value="Smuggler">Smuggler</option>
+                <option value="Adventurer">Adventurer</option>
+                <option value="Lost">Lost</option>
+                <option value="Morty">Morty</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <h3>How did you find the reception on the plumbus?</h3>
+              <hr />
+              <label for="radiobtn-label">
+                <input type="radio" name="radio" value="radio" />The perfect
+                amount</label
+              >
+              <label for="radiobtn-label">
+                <input type="radio" name="radio" value="radio" />Almost
+                enough</label
+              >
+              <label for="radiobtn-label">
+                <input type="radio" name="radio" value="radio" />Could use
+                more</label
+              >
+              <label for="radiobtn-label">
+                <input
+                  type="radio"
+                  name="radio"
+                  value="radio"
+                />Insufficient</label
+              >
+              <label for="radiobtn-label">
+                <input type="radio" name="radio" value="radio" />Zero
+                bars</label
+              >
+            </div>
+            <div class="form-group">
+              <h3>
+                Can you please provide 3-6 feedback points on the heat exchange
+                on the plumbus?
+              </h3>
+              <hr />
+              <label for="checkbox-label">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  value="checkbox"
+                />Perfect for cooking</label
+              >
+              <label for="checkbox-label">
+                <input type="checkbox" name="checkbox" value="checkbox" />Heats
+                my two beedroom apartment</label
+              >
+              <label for="checkbox-label">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  value="checkbox"
+                />Heating is bad but it cleans really well</label
+              >
+              <label for="checkbox-label">
+                <input type="checkbox" name="checkbox" value="checkbox" />Crank
+                it up!</label
+              >
+
+              <label for="checkbox-label">
+                <input
+                  type="checkbox"
+                  name="checkbox"
+                  value="checkbox"
+                />N/A</label
+              >
+            </div>
+            <div class="form-group">
+              <label for="textarea"
+                ><h3>
+                  If any further comments or input please state these in the
+                  following field
+                </h3>
+              </label>
+              <textarea name="textarea" rows="8" cols="80"></textarea>
+            </div>
+            <div class="form-group">
+              <div class="btn">
+                <button id="submit" type="submit" name="submit">
+                  Submit form
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
