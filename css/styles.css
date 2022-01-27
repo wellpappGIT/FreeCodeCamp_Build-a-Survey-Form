@@ -86,7 +86,7 @@ select {
 #top-img {
   display: flex;
   width: 8rem;
-  padding-top: 1rem;
+  padding-top: 0.3rem;
 }
 
 #title {
