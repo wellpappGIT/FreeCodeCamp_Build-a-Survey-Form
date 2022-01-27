@@ -37,7 +37,7 @@ hr {
   width: 30%;
   max-width: 30%;
   min-width: 300px;
-  padding: 0 0;
+  padding: 10px 0;
   margin: 0 auto;
   align-items: center;
 }
@@ -86,7 +86,7 @@ select {
 #top-img {
   display: flex;
   width: 8rem;
-  padding-top: 0.3rem;
+  padding-top: 0.5rem;
 }
 
 #title {
